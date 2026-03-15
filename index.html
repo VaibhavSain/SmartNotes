@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Notes</title>
+    <script>
+      // Suppress benign Vite WebSocket errors that appear when HMR is disabled
+      const originalError = console.error;
+      const originalWarn = console.warn;
+      const suppressedMessages = [
+        'failed to connect to websocket',
+        'websocket closed without openeed',
+        '[vite] failed to connect to websocket'
+      ];
+
+      console.error = function(...args) {
+        if (args.length > 0 && typeof args[0] === 'string' && suppressedMessages.some(msg => args[0].includes(msg))) {
+          return;
+        }
+        originalError.apply(console, args);
+      };
+
+      console.warn = function(...args) {
+        if (args.length > 0 && typeof args[0] === 'string' && suppressedMessages.some(msg => args[0].includes(msg))) {
+          return;
+        }
+        originalWarn.apply(console, args);
+      };
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
