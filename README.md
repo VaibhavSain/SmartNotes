@@ -1,20 +1,102 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🧠 SmartNotes
 
-# Run and deploy your AI Studio app
+SmartNotes is a **modern AI-powered note-taking application** designed to help users capture, organize, and manage knowledge efficiently.
+It provides a **clean interface, fast performance, and intelligent features** to improve productivity for students, developers, and professionals.
 
-This contains everything you need to run your app locally.
+Built using **React, TypeScript, and Tailwind CSS**, SmartNotes focuses on simplicity, speed, and scalability.
 
-View your app in AI Studio: https://ai.studio/apps/26933bf7-053c-4d95-8b6f-c9b9f5b74cdf
+---
 
-## Run Locally
+## 🚀 Features
 
-**Prerequisites:**  Node.js
+* ✍️ Create and manage notes easily
+* 🧠 AI-powered note assistance *(planned feature)*
+* 📂 Organized and structured note management
+* ⚡ Fast and responsive UI
+* 🎨 Clean and modern design
+* 📱 Fully responsive layout
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🛠 Tech Stack
+
+* **Frontend:** React
+* **Language:** TypeScript
+* **Styling:** Tailwind CSS
+* **Build Tool:** Vite
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/smartnotes.git
+```
+
+Navigate to the project folder:
+
+```bash
+cd smartnotes
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 📁 Project Structure
+
+```
+smartnotes
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── assets
+│   ├── hooks
+│   └── App.tsx
+│
+├── public
+├── package.json
+└── README.md
+```
+
+---
+
+## 🎯 Future Improvements
+
+* AI-powered note summarization
+* Smart tagging and search
+* Cloud sync
+* Markdown support
+* Collaboration features
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+If you’d like to improve SmartNotes, feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## ⭐ Support
+
+If you like this project, consider **starring the repository** to support development.
